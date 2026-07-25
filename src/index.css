@@ -1,1 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+body {
+  font-family: "Cairo", sans-serif;
+  overscroll-behavior-y: none;
+}
+
+/* إخفاء شريط التمرير في القوائم الأفقية بشكل أنيق */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
